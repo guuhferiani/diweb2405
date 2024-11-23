@@ -1,8 +1,104 @@
 
 /* Reset do navegador */
 * {
-    margin: 0; 
-    padding: 0;
-    background: grey;
+    margin: 0;  /* margem */
+    padding: 0; /* preenchimento */
+    list-style: none;
 }
 
+body {
+    background: #292929; /* cor Fundo */
+    /* HEXADECIMAL */
+}
+
+a {
+    text-decoration: none;
+    color: #7b7b7b;
+}
+
+a:hover {
+    color: #ececec;
+}
+
+i {
+    color: #b2dde3;
+}
+/* 
+ID = # 
+Class = ( . ) ponto */
+/* estrutura do menu */
+#header {  
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 1px;
+    z-index: 2;
+}
+
+.trocar-tema {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#trocarTema {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: ;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background: #323232;
+    gap: 15px;
+}
+
+.menu-item {
+    width: 100%;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-mobile { 
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid #dfdfdf;
+}
+
+.menu-mobile .menu-link {
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 15px;
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.menu-icon, 
+.menu-text {
+    color: #838383;
+    font-weight: 600;  /* expessura */
+}
+
+.menu-icon{ 
+    font-size: 18px;
+}
+
+.menu-text {
+    font-size: 14px;
+    text-transform: uppercase;
+}
