@@ -46,7 +46,7 @@ Class = ( . ) ponto */
     font-size: 20px;
     color: white;
     cursor: pointer;
-    transition: ;
+    /* transition: ; */
 }
 
 .menu {
@@ -66,7 +66,7 @@ Class = ( . ) ponto */
     gap: 8px;
 }
 
-.menu-mobile { 
+.menu-mobile {
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -102,3 +102,36 @@ Class = ( . ) ponto */
     font-size: 14px;
     text-transform: uppercase;
 }
+
+.header-nav { 
+    display: none;
+}
+
+.menu-principal {
+    gap: 16px;
+}
+
+.menu-social {
+    gap: 22px;
+}
+
+.btn { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 18px;
+    cursor: pointer;
+    /* gap: 5px; */
+    /* width: ; */
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
