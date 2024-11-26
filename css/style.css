@@ -1,13 +1,15 @@
-
 /* Reset do navegador */
 * {
-    margin: 0;  /* margem */
-    padding: 0; /* preenchimento */
+    margin: 0;
+    /* margem */
+    padding: 0;
+    /* preenchimento */
     list-style: none;
 }
 
 body {
-    background: #292929; /* cor Fundo */
+    background: #292929;
+    /* cor Fundo */
     /* HEXADECIMAL */
 }
 
@@ -23,11 +25,12 @@ a:hover {
 i {
     color: #b2dde3;
 }
+
 /* 
 ID = # 
 Class = ( . ) ponto */
 /* estrutura do menu */
-#header {  
+#header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -88,13 +91,14 @@ Class = ( . ) ponto */
     font-size: 18px;
 }
 
-.menu-icon, 
+.menu-icon,
 .menu-text {
     color: #838383;
-    font-weight: 600;  /* expessura */
+    font-weight: 600;
+    /* expessura */
 }
 
-.menu-icon{ 
+.menu-icon {
     font-size: 18px;
 }
 
@@ -103,7 +107,7 @@ Class = ( . ) ponto */
     text-transform: uppercase;
 }
 
-.header-nav { 
+.header-nav {
     display: none;
 }
 
@@ -115,7 +119,7 @@ Class = ( . ) ponto */
     gap: 22px;
 }
 
-.btn { 
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,10 +132,68 @@ Class = ( . ) ponto */
     color: white;
 }
 
+.btn:hover {
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
+}
+
+.btn span,
+.btn i {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.video iframe { 
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+#home, 
+.projetos,
+.sobre,
+.contato { 
+    padding: 40px 16px;
+}
 
 
 
 
+/*  Responsivo  */
 
+@media (min-width: 768px) { /* comprimento até  */
 
-
+    #header { 
+        position: fixed;
+        border-bottom: 1px solid white;
+        padding: 16px 96px;
+        background: #323232;
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .header-nav { 
+        display: flex;
+    }
+    .header-nav,
+    .trocar-tema {
+        min-width: 30%;
+    }
+    
+}
