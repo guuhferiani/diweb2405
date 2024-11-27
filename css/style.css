@@ -1,6 +1,48 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* tema Dark */
+:root,
+:root[data-theme='dark'] { 
+    
+    --cor-fundo: #111217;
+    --cor-texto-padrao: #dfe0e6;
+
+    --cor-borda: #dfe0e6;
+
+    --cor-titulo: #dfe0e6;
+    --cor-subtitulo: #dfe0e6;
+
+    --cor-texto: #dfe0e6;
+
+    --cor-hover: #dfe0e6;
+    --cor--menu: #7b7b7b;
+
+    --cor-link: #dfe0e6; 
+    --cor-icone: #dfe0e6;
+
+}
+
+/* tema Light */
+:root[data-theme='light'] {
+
+    --cor-fundo: #dfe0e6;
+    --cor-texto-padrao:  #111217;
+
+    --cor-borda: #111217;
+
+    --cor-titulo: #111217;
+    --cor-subtitulo: #111217;
+    --cor-texto: #111217;
+
+    --cor-hover: #dfe0e6;
+    --cor--menu: #7b7b7b;
+
+    --cor-link: #dfe0e6; 
+    --cor-icone: #111217;
+
+}
+
 
 /* Reset do navegador */
 * {
@@ -13,34 +55,44 @@
 }
 
 body {
-    background: #111217;
+    background: var(--cor-fundo);
     /* cor Fundo */
     /* HEXADECIMAL */
+    color: var(--cor-texto-padrao);
 }
 
 a {
     text-decoration: none;
-    color: #7b7b7b;
+    color: var(--cor--menu);
 }
 
 a:hover {
-    color: #ececec;
+    color: var(--cor-hover);
 }
 
 i {
-    color: #b2dde3;
+    color: var();
 }
 
 h1 {
     font-size: 40px;
     font-weight: 200;
-    color: #ececec;
+    color: var(--cor-titulo);
     font-family: "Inter", sans-serif;
     text-transform: uppercase;
 }
 
 b {
     font-weight: 400;
+}
+
+p, span, li {
+    font-size: 16px;
+}
+
+p {
+    text-align: justify;
+    font-family: "Poppins", serif;
 }
 
 /* 
@@ -64,7 +116,7 @@ Class = ( . ) ponto */
 
 #trocarTema {
     font-size: 20px;
-    color: white;
+    color: var(--cor-icone);
     cursor: pointer;
     /* transition: ; */
 }
@@ -74,7 +126,6 @@ Class = ( . ) ponto */
     align-items: center;
     background: transparent;
     gap: 15px;
-    background: #111217;
 }
 
 .menu-item {
@@ -147,7 +198,7 @@ Class = ( . ) ponto */
     /* width: ; */
     background: transparent;
     border: none;
-    color: white;
+    color: #ececec;
 }
 
 .btn:hover {
@@ -178,15 +229,15 @@ Class = ( . ) ponto */
     gap: 16px;
 }
 
-.video iframe { 
+.video iframe {
     width: 100%;
     aspect-ratio: 16/9;
 }
 
-#home, 
+#home,
 .projetos,
 .sobre,
-.contato { 
+.contato {
     padding: 40px 16px;
 }
 
@@ -195,26 +246,31 @@ Class = ( . ) ponto */
 
 /*  Responsivo  */
 
-@media (min-width: 768px) { /* comprimento até  */
+@media (min-width: 768px) {
+    /* comprimento até  */
 
-    #header { 
+    #header {
         position: fixed;
         border-bottom: 1px solid white;
         padding: 16px 96px;
-        background: #111217;
+        background: var(--cor-fundo);
     }
+
     .nav-mobile {
         display: none;
     }
-    .header-nav { 
+
+    .header-nav {
         display: flex;
     }
+
     .header-nav,
     .trocar-tema {
         min-width: 30%;
     }
-    #home, 
-    .projetos, 
+
+    #home,
+    .projetos,
     .sobre {
         padding: 128px 96px 64px 96px;
     }
@@ -229,13 +285,15 @@ Class = ( . ) ponto */
         font-size: 80px;
     }
 
-}  /* Fim 768px */
+}
 
-@media (min-width: 992px) { 
+/* Fim 768px */
 
-} /* Fim 992 */
+@media (min-width: 992px) {}
 
-@media (min-width: 1200px) { 
+/* Fim 992 */
+
+@media (min-width: 1200px) {
     #home {
         padding: 60px 96px 32px;
     }
@@ -243,13 +301,18 @@ Class = ( . ) ponto */
     .main-content .btn {
         width: auto;
     }
-}/*  fim 1200px */
+    p, span, li {
+        font-size: 20px;
+    }
+}
 
-@media (min-width: 1400px) { 
+/*  fim 1200px */
+
+@media (min-width: 1400px) {
 
     .header {
         padding: 200px 240px 32px;
-        
+
     }
 
     h1 {
@@ -257,5 +320,6 @@ Class = ( . ) ponto */
         /* text-align: justify; */
     }
 
-} /* fim 1400px */
+}
 
+/* fim 1400px */
