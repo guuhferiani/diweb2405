@@ -1,6 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 /* tema Dark */
 :root,
 :root[data-theme='dark'] { 
@@ -20,7 +21,11 @@
 
     --cor-link: #dfe0e6; 
     --cor-icone: #dfe0e6;
+    --icone-hover: #7b7b7b;
 
+    --trocar-tema: #ffa600;
+
+    --cor-btn: #dfe0e6;
 }
 
 /* tema Light */
@@ -35,11 +40,16 @@
     --cor-subtitulo: #111217;
     --cor-texto: #111217;
 
-    --cor-hover: #dfe0e6;
+    --cor-hover: #111217;
     --cor--menu: #7b7b7b;
 
     --cor-link: #dfe0e6; 
     --cor-icone: #111217;
+    --icone-hover: #7b7b7b;
+
+    --trocar-tema: #297edf;
+
+    --cor-btn: #111217;
 
 }
 
@@ -115,8 +125,8 @@ Class = ( . ) ponto */
 }
 
 #trocarTema {
-    font-size: 20px;
-    color: var(--cor-icone);
+    font-size: 22px;
+    color: var(--trocar-tema);
     cursor: pointer;
     /* transition: ; */
 }
@@ -143,37 +153,38 @@ Class = ( . ) ponto */
     position: fixed;
     bottom: 0;
     justify-content: space-between;
-    border-top: 1px solid #dfdfdf;
+    border-top: 1px solid var(--cor-borda);
 }
 
 .menu-mobile .menu-link {
     flex-direction: column;
     justify-content: center;
     padding: 8px 15px;
+    color: var(--cor-link);
 }
 
 .menu-link.active .menu-icon,
 .menu-link.active .menu-text,
 .menu-link:hover .menu-icon,
 .menu-link:hover .menu-text {
-    color: whitesmoke;
+    color: var(--cor-hover);
     /* font-size: 18px; */
 }
 
-.menu-icon,
-.menu-text {
-    color: #838383;
-    font-weight: 600;
-    /* expessura */
+.menu-icon {
+    font-size: 22px;
+    color: var(--cor-icone);
 }
 
-.menu-icon {
-    font-size: 18px;
+.menu-social .menu-icon:hover {
+    color: var(--icone-hover);
 }
 
 .menu-text {
     font-size: 14px;
     text-transform: uppercase;
+    font-weight: 600;
+    color: var(--cor--menu);
 }
 
 .header-nav {
@@ -198,7 +209,7 @@ Class = ( . ) ponto */
     /* width: ; */
     background: transparent;
     border: none;
-    color: #ececec;
+    color: var(--cor-btn);
 }
 
 .btn:hover {
@@ -213,7 +224,7 @@ Class = ( . ) ponto */
 }
 
 .btn-primary {
-    border: 1px solid white;
+    border: 1px solid var(--cor-btn);
     border-radius: 10px;
 }
 
@@ -241,6 +252,31 @@ Class = ( . ) ponto */
     padding: 40px 16px;
 }
 
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.projetos-container { 
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.img-card {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: center;
+}
+
 
 
 
@@ -251,7 +287,7 @@ Class = ( . ) ponto */
 
     #header {
         position: fixed;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid var(--cor-borda);
         padding: 16px 96px;
         background: var(--cor-fundo);
     }
@@ -289,7 +325,9 @@ Class = ( . ) ponto */
 
 /* Fim 768px */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+}
 
 /* Fim 992 */
 
