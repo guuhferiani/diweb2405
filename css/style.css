@@ -6,7 +6,7 @@
 :root {
     --font-menu: "Poppins", sans-serif;
     --texto: "Inter", sans-serif;
-    --titulo-h1: ;
+    --titulo-h1: "Inter", sans-serif;
     --font-h2: "Inter", sans-serif;
     --font-h3: "Domine", serif;
     --font-p: "Domine", serif;
@@ -104,7 +104,7 @@ h1 {
     font-size: 32px;
     font-weight: 200;
     color: var(--cor-titulo);
-    font-family: var(--font-h2);
+    font-family: var(--titulo-h1);
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -513,6 +513,10 @@ h2 {
     h2 {
         font-size: 64px;
         margin-bottom: 50px;
+    }
+    .projetos, 
+    .sobre { 
+        padding: 160px 240px 64px;
     }
 }
 
