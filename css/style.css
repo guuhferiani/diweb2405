@@ -5,9 +5,11 @@
 
 :root {
     --font-menu: "Poppins", serif;
-    --font-h1: ;
-    --font-h2: ;
-    --font-p: ;
+    --texto: "Inter", sans-serif;
+    --titulo-h1: ;
+    --font-h2: "Inter", sans-serif;
+    --font-h3: "Domine", serif;
+    --font-p: "Domine", serif;
 }
 
 /* tema Dark */
@@ -20,7 +22,7 @@
     --cor-borda: #dfe0e6;
 
     --cor-titulo: #dfe0e6;
-    --cor-subtitulo: #dfe0e6;
+    --cor-subtitulo: #48a7f5;
 
     --cor-texto: #dfe0e6;
 
@@ -34,6 +36,8 @@
     --trocar-tema: #ffa600;
 
     --cor-btn: #dfe0e6;
+
+    --cor-seta: #48a7f5;
 }
 
 /* tema Light */
@@ -59,6 +63,8 @@
 
     --cor-btn: #111217;
 
+    --cor-seta: #111217;
+
 }
 
 
@@ -68,7 +74,7 @@
     /* margem */
     padding: 0;
     /* preenchimento */
-    list-style: none;
+/*     list-style: none; */
     box-sizing: border-box;
 }
 
@@ -145,6 +151,7 @@ Class = ( . ) ponto */
     align-items: center;
     background: transparent;
     gap: 15px;
+    list-style: none;
 }
 
 .menu-item {
@@ -268,6 +275,13 @@ Class = ( . ) ponto */
     gap: 32px;
 }
 
+.projetos h2 {
+    text-align: center;
+    font-family: var(--font-h2);
+    color: var(--cor-titulo);
+    margin-bottom: 25px;
+}
+
 .projetos-container { 
     display: flex;
     flex-direction: column;
@@ -292,14 +306,69 @@ Class = ( . ) ponto */
     box-shadow: 10px 4px 25px rgba(196, 196, 196, 0.452);
 }
 
+.card-title { 
+    font-size: 32px;
+    color: var(--cor-subtitulo);
+    font-weight: 100;
+    font-family: var(--font-h3);
+}
 
+.card-descricao {
+    color: var(--cor-texto);
+    font-size: 22px;
+    font-family: var(--texto);
+}
 
+.card-lista {
+    font-family: var(--texto);
+   /*  list-style: disc; */
+    margin-bottom: 50px;
+}
+
+.card-lista .card-item {
+    font-size: 18px;
+    color: var(--cor-texto);
+    margin: 10px;
+    margin-left: 15px;
+    list-style: none;
+}
+
+.icone-seta {
+    color: var(--cor-seta);
+}
+
+.card-button,
+.card-descricao { 
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+
+.card-button .btn { 
+    padding: 8px 20px;
+    margin-top: 15px;
+}
+
+.card-button .btn span { 
+    color: var(--cor-btn);
+    font-family: var(--texto);
+    font-size: 20px;
+}
+
+.card-button .btn i:hover,
+.card-button .btn span:hover { 
+    color: var(--cor--menu);
+}
+
+.card-button .btn i {
+    color: var(--cor-seta);
+}
 
 
 /*  Responsivo  */
 
 @media (min-width: 768px) {
-    /* comprimento até  */
+    /* apartir de  */
 
     #header {
         position: fixed;
@@ -337,10 +406,22 @@ Class = ( . ) ponto */
         font-size: 80px;
     }
 
+    .projetos h2 {
+        font-size: 60px;
+    }
+
+} /* fim 768px */
+
+
+/* Comprimento até 768px */
+@media (max-width: 768px) {
+    .projetos h2 {
+        font-size: 60px;
+    }
 }
+/* Fim comprimento até 768px */
 
-/* Fim 768px */
-
+/* apartir de  */
 @media (min-width: 992px) {
 
     .projeto-card {
@@ -352,11 +433,14 @@ Class = ( . ) ponto */
     .img-card {
         width: 55%;
     }
-
+    .projetos h2 { 
+        font-size: 60px;
+    }
 }
 
 /* Fim 992 */
 
+/* apartir de  */
 @media (min-width: 1200px) {
     #home {
         padding: 60px 96px 32px;
@@ -368,10 +452,14 @@ Class = ( . ) ponto */
     p, span, li {
         font-size: 20px;
     }
+    .projetos h2 { 
+        font-size: 80px;
+    }
 }
 
 /*  fim 1200px */
 
+/* apartir de  */
 @media (min-width: 1400px) {
 
     .header {
@@ -383,7 +471,9 @@ Class = ( . ) ponto */
         font-size: 100px;
         /* text-align: justify; */
     }
-
+    .projetos h2 { 
+        font-size: 90px;
+    }
 }
 
 /* fim 1400px */
