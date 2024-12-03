@@ -143,7 +143,7 @@ Class = ( . ) ponto */
 }
 
 .header-logo .logo {
-    width: 150px;
+    width: 50px;
     height: 40px;
 }
 
@@ -412,6 +412,75 @@ h2 {
     flex-direction: column;
     justify-content: flex-start;
     gap: 18px;
+}
+
+.sobre-icones {
+    display: flex;
+    align-items: right;
+    gap: 18px;
+}
+
+.sobre-icones i { 
+    font-size: 18px;
+    color: var(--cor-seta);
+}
+
+.sobre-content2 .col1, 
+.sobre-content2 .col2 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 32px;
+}
+
+.sobre-content2 .col1 .row1, 
+.sobre-content2 .col1 .row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: var(--font-h3);
+    font-weight: 200;
+    /* color: ; */
+    margin-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border: 1px solid var(--icone-hover);
+    text-align: left;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.accordion-header span {
+    color: var(--cor-texto);
+}
+
+.accordion-body {
+    display: ;
+    padding: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border: 1px solid var(--cor-btn);
+}
+
+.accordion-body p {
+    font-family: var(--texto);
+    /* text-align: ; */
+    /* color: var(); */
+    margin-bottom: 5px;
 }
 
 

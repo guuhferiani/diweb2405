@@ -1,6 +1,6 @@
 const toggleTheme = document.getElementById("trocarTema");
 const rootHtml = document.documentElement;
-const accordionHeaders = document.querySelectorAll(".accordion-header1");
+const accordionHeaders = document.querySelectorAll(".accordion-header");
 const menuLinks = document.querySelectorAll(".menu-link");
 
 function changeTheme() {
