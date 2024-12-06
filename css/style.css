@@ -550,8 +550,10 @@ footer a {
     background: var(--fundo-reverse);
     padding: 20px;
     border-radius: 8px;
-    max-width: 600px;
+
     width: 90%;
+    max-width: 800px;
+
     box-shadow: 0 4px 8px var(--cor--menu);
     /*OPCIONAL*/
     /* border: ;  OPCIONAL*/
@@ -567,7 +569,7 @@ footer a {
     color: var(--cor-fundo);
     font-weight: bold;
     font-family: var(--texto);
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 5px;
 }
 
@@ -581,7 +583,7 @@ footer a {
     width: 100%;
     padding: 10px;
     border: 1px solid var(--cor-hover);
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 5px;
 }
 
@@ -603,23 +605,20 @@ footer a {
     font-size: 14px;
 }
 
+.btn-form {
+    display: flex;
+    justify-content: center;
+}
 
 
 .form-button {
-    
-     display: block;
     width: 100px;
     padding: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 20px;
     border: none;
     /*     color: ;
     background: ; */
-}
-
-.form-button  {
-    text-align: center;
-    justify-content: center;
 }
 
 .form-button:hover {
