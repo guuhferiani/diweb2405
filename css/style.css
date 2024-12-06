@@ -520,8 +520,27 @@ h3 {
 }
 
 .contato button {
+    margin-bottom: 10px;
+}
+
+footer {
     margin-bottom: 80px;
 }
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #48a7f5;
+}
+
+/* footer a:hover {
+    color: ;
+} */
+
 
 /*  Responsivo  */
 
@@ -590,6 +609,9 @@ h3 {
     }
     .contato p {
         width: 80%;
+    }
+    footer {
+        margin: 0;
     }
 } 
 
@@ -700,3 +722,4 @@ h3 {
 }
 
 /* fim 1400px */
+

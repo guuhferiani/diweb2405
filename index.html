@@ -523,7 +523,7 @@
                 </a>
             </li>
 
-          <!--   <li>
+            <!--   <li>
                 <a class="menu-link" href="mailto:gustavo.feriani@sp.senai.br">
                     <i class="menu-icon bi bi-envelope"> </i>
                     <span> gustavo.feriani@sp.senai.br </span>
@@ -539,14 +539,81 @@
             </button>
         </a>
 
+        <div class="form-contato">
+
+            <form action="https://formspree.io/f/mgveqlwj" method="post">
+
+                <div class="form-name">
+
+                    <!-- Etiqueta -->
+                    <label for="name" class=""> 
+                        Seu Nome *
+                        <!-- Campo de Preenchimento -->
+                        <input type="text" name="name" placeholder="nome completo" required>
+                    
+                    </label>
+
+                </div>
+
+                <div class="form-email">
+
+                    <label for="email">E-mail *</label>
+
+                    <input type="email" name="email" id="email" required>
+
+                </div>
+
+                <div class="">
+                    <label for="tel"> Contato </label> <br>
+
+                    Whatsapp
+                    <input type="radio" name="tel">
+                    <input type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+
+                    <br>
+                    E-mail
+                    <input type="radio" name="tel">
+                    <input type="email" name="telefone">
+
+                </div>
+
+                <div class="form-grupo">
+
+                    <label for=""> Mensagem de Erro </label>
+
+                    <input type="file">
+
+                </div>
+
+                <div class="">
+
+                    <textarea name="message" id="message" rows="5">
+
+                    </textarea>
+
+                </div>
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+        </div>
+
+
     </section> <!-- fim contato -->
 
     <footer>
 
         <p>
-            &copy; 2024. Portfólio desenvolvido para fins educativos, com base nas aulas do <a href="https://sp.senai.br/unidade/leopoldina/" target="_blank"> Senai Leopoldina - SP </a>.
+            &copy; 2024. Portfólio desenvolvido para fins educativos, com base nas aulas do
+            <a href="https://sp.senai.br/unidade/leopoldina/" target="_blank">
+                Senai Leopoldina - SP
+            </a>.
             Desenvolvido por
             <a href="https://github.com/guuhferiani" target="_blank">
+                <i class="bi bi-github"> </i>
                 Gustavo Feriani
             </a>
         </p>
