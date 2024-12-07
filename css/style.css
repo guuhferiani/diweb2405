@@ -41,6 +41,8 @@
     --cor-seta: #48a7f5;
 
     --fundo-reverse: #dfe0e6;
+
+    --input: #f1f1f1;
 }
 
 /* tema Light */
@@ -70,6 +72,8 @@
 
     --fundo-reverse: #111217;
 
+    --input: #f1f1f1;
+
 }
 
 /*  Logo */
@@ -77,6 +81,9 @@ html[data-theme='dark'] .logo {
     filter: invert(1);
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 /* Reset do navegador */
 * {
@@ -534,7 +541,7 @@ footer {
 }
 
 footer p {
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     padding: 20px;
 }
@@ -585,6 +592,7 @@ footer a {
     border: 1px solid var(--cor-hover);
     font-size: 18px;
     margin-top: 5px;
+    background: var(--input);
 }
 
 .form-input:focus,
